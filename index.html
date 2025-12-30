@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy New Year • Welcome</title>
+
+  <!-- Main stylesheet (shared across pages) -->
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Anime.js CDN for smooth animations (optional, used for small effects) -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+  <!-- Shared scripts (handles transitions, particles, small interactions) -->
+  <script src="assets/scripts.js" defer></script>
+</head>
+<body class="page page--landing">
+  <!-- Floating particle layer (hearts, sparkles) -->
+  <div id="particles" aria-hidden="true"></div>
+
+  <main class="container">
+    <header class="sr-only" aria-hidden="true">
+      <h1>Happy New Year — Surprise</h1>
+    </header>
+
+    <section class="hero">
+      <div class="hero__inner">
+        <!-- Animated heading -->
+        <h2 class="heading heading--big" id="landingHeading" aria-live="polite">
+          Happy New Year <span class="emoji">❤️</span>
+        </h2>
+
+        <p class="lead">
+          A little surprise, made with ❤️. Click below to begin.
+        </p>
+
+        <!-- CTA: intercepts click for animated page transition -->
+        <a class="btn btn--primary btn--large js-link" href="gallery.html" data-target="gallery.html" aria-label="Start the Surprise">
+          Start the Surprise <span class="emoji">💌</span>
+          <span class="btn__ripple" aria-hidden="true"></span>
+        </a>
+
+        <div class="tiny-hint">
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- small footer -->
+    <footer class="footer">
+      <small class="muted">Made with care • Editable — see comments in files to customize</small>
+    </footer>
+  </main>
+
+  <!-- Accessibility helper (skip link) -->
+  <a class="skip-link" href="#landingHeading">Skip to content</a>
+
+  <!-- NOTE: All visual content is decorative; real photos and messages are on the gallery and final pages -->
+</body>
+</html>
